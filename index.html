@@ -263,8 +263,21 @@ function viewMore(i) {
     modal.style.display = "block";
 }
 </script>
+// ---------------- PIN LOCK ----------------
+const ACCESS_PIN = "Boomerangpreview25";  // your PIN
+
+function checkPIN() {
+    const input = document.getElementById("pinInput").value.trim();
+
+    if (input === ACCESS_PIN) {
+        document.getElementById("pinScreen").style.display = "none";
+    } else {
+        document.getElementById("pinError").innerText = "Incorrect PIN. Try again.";
+    }
+}
 
 </body>
 </html>
+
 
 
