@@ -569,7 +569,7 @@
         "e2": "https://media.discordapp.net/attachments/1328025887333159014/1447620156988723220/image.png?ex=69399a54&is=693848d4&hm=0f87c13dc7ff93369d221ec874535168ad44ed258b263c65fb7fb1775d653a08&=&format=webp&quality=lossless&width=928&height=139",
         "e3": "https://media.discordapp.net/attachments/1328025887333159014/1447621555742834779/IMG_0814.png?ex=69399ba2&is=69384a22&hm=4874d97d7d83db2c7726e2d46a8f142ed7dee4574cc4952a201c25f014493c2c&=&format=webp&quality=lossless"
     },
-        {
+    {
         "discord": "1380127906394542141",
         "reason": "Eulen",
         "server": "Southland RP",
@@ -579,7 +579,7 @@
         "e2": "",
         "e3": ""
     },
-        {
+    {
         "discord": "1235632457500463144",
         "reason": "XINE - Generics & DControl",
         "server": "Southland RP",
@@ -589,7 +589,7 @@
         "e2": "",
         "e3": ""
     },
-        {
+    {
         "discord": "1433932377003917362",
         "reason": "XINE - Generics",
         "server": "Southland RP",
@@ -600,3 +600,4 @@
         "e3": ""
     }
 ]
+
