@@ -1,3 +1,16 @@
+// --------------- PIN LOCK ---------------
+const ACCESS_PIN = "Boomerangpreview25";  // <-- your PIN here
+
+function checkPIN() {
+    let input = document.getElementById("pinInput").value.trim();
+
+    if (input === ACCESS_PIN) {
+        document.getElementById("pinScreen").style.display = "none";
+    } else {
+        document.getElementById("pinError").innerText = "Incorrect PIN. Try again.";
+    }
+}
+
 [
     {
         "discord": "123456789012345678",
@@ -600,6 +613,7 @@
         "e3": ""
     }
 ]
+
 
 
 
