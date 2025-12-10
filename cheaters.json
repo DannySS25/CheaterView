@@ -1,4 +1,5 @@
-// --------------- PIN LOCK ---------------
+[
+    // --------------- PIN LOCK ---------------
 const ACCESS_PIN = "Boomerangpreview25";  // <-- your PIN here
 
 function checkPIN() {
@@ -613,6 +614,615 @@ function checkPIN() {
         "e3": ""
     }
 ]
+
+
+
+
+
+
+
+    {
+        "discord": "123456789012345678",
+        "reason": "Eulen & Damage Multiplier",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-05-20",
+        "e1": "https://media.discordapp.net/attachments/1346892963489255504/1448080602321653901/Screenshot_2025-12-09_223502.png?ex=6939f5a7&is=6938a427&hm=599541c21303881fb4f3d91048df63452179e0899032989ebb16a9050e706166&=&format=webp&quality=lossless&width=928&height=508",
+        "e2": "https://media.discordapp.net/attachments/1346892963489255504/1448080601939968050/Screenshot_2025-12-09_223429.png?ex=6939f5a7&is=6938a427&hm=6a0ac2903adf4dda0667178bf38e0912632feaf741ae5f81069234e2b80cea18&=&format=webp&quality=lossless&width=928&height=502",
+        "e3": ""
+    },
+    {
+        "discord": "987654321098765432",
+        "reason": "RedEngine",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-05-21",
+        "e1": "https://media.discordapp.net/attachments/1346892963489255504/1448091049149993050/image.png?ex=6939ff62&is=6938ade2&hm=8970b6c6f2bc60f41e5f3c90522da5696946edcbc46b859e31cb2b71bf4c7da2&=&format=webp&quality=lossless",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "1057519114672951376",
+        "reason": "Mod Menu",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-06-16",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1384301289000669295/image.png?ex=69394dca&is=6937fc4a&hm=f31d776cf189d8382b4038aac6c415101469f8df1fa87246561658e03641a832&=&format=webp&quality=lossless",
+        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1384301289411842129/image.png?ex=69394dca&is=6937fc4a&hm=70f0425284703e90b9a5b8f9b031495de8ad47f24dcdd2f88781be4fbb61aa9a&=&format=webp&quality=lossless",
+        "e3": "https://media.discordapp.net/attachments/1328025887333159014/1384301289198059580/image.png?ex=69394dca&is=6937fc4a&hm=61f7aab4e275142154f6741c3148c988a0229dfae3d425b08e810f6c93b4852b&=&format=webp&quality=lossless&width=928&height=48"
+    },
+    {
+        "discord": "1253120914665640129",
+        "reason": "RedEngine",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-06-27",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1387992440660688906/7836424F-6A53-42AE-B975-81DC09180D91.png?ex=69398c71&is=69383af1&hm=a7b1ee4e7bbeb26a3a1e7083262f424f4355b7734c7c1eb57c2020cd0c62b8ca&=&format=webp&quality=lossless",
+        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1387992920992518339/staff-report___Rage_RP_-_Discord_6_26_2025_10_07_20_PM.png?ex=69398ce4&is=69383b64&hm=4ef8ec366e255ab9228834a6006b34e411a595cce934d5713d60ca20f46ed12a&=&format=webp&quality=lossless&width=928&height=499",
+        "e3": ""
+    }, 
+    {
+        "discord": "1386831665565007962",
+        "reason": "XINE - Generics",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-06-27",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1388285819621474374/image.png?ex=69394c2c&is=6937faac&hm=585b0042c7aba1481ba470c382c0f021d84c80756513d5441415dc1885ac9b8a&=&format=webp&quality=lossless",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "1099830234678829056",
+        "reason": "Spotless Bypass",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-06-28",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1388608396667785266/IMG_0488.png?ex=6939cfd8&is=69387e58&hm=f4d28527a1eef1fcfbac8a92086de6608c128e9a79bcf53fab914631563d93ed&=&format=webp&quality=lossless",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "1353887719872266280",
+        "reason": "DIAGTRACK OFF & CONFIG",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-07-02",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1390087265606307880/image.png?ex=69394266&is=6937f0e6&hm=0dc36b6de1a752bde26bfbe18d2d5e54462186b04bfdd09b5f651efe8ae79884&=&format=webp&quality=lossless",
+        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1390087306970398750/image.png?ex=69394270&is=6937f0f0&hm=18b75fcb779848dc53ccfb8ebcd480623f2c9ae431df21c885a56953367285b5&=&format=webp&quality=lossless",
+        "e3": ""
+    },
+    {
+        "discord": "1141451986940743781",
+        "reason": "SKRIPT.GG & Spoofer Download",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-07-02",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1390096956084191395/image.png?ex=69394b6d&is=6937f9ed&hm=35219c1e6a0c5e617ee8b144c54618dc07201e112b68265696a7df1f8795033b&=&format=webp&quality=lossless",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "1020137721051750440",
+        "reason": "XINE - Generics",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-07-13",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1393829444522606644/Desktop_Screenshot_2025.07.13_-_00.22.18.22.png?ex=6939b093&is=69385f13&hm=e42a77a0cdc6b459c694d7ecbc37c9a46f47a55e93ddc66f6a6f9adb3ba73efb&=&format=webp&quality=lossless&width=928&height=522",
+        "e2": "",
+        "e3": ""
+    }, 
+    {
+        "discord": "1377185266791350323",
+        "reason": "Macho",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-07-13",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1393887926047215716/image.png?ex=69393e4a&is=6937ecca&hm=0720256360366a99a7de868472df3ae8223bf4923e96cc5a01bdfe38a2bc1fb8&=&format=webp&quality=lossless&width=928&height=548",
+        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1393887925741162526/image.png?ex=69393e4a&is=6937ecca&hm=b6eba687686cc2d747180c2044d57b125252b3ac829bda786612215316a98be8&=&format=webp&quality=lossless&width=928&height=289",
+        "e3": "https://media.discordapp.net/attachments/1328025887333159014/1393887925426720768/image.png?ex=69393e4a&is=6937ecca&hm=936b17fc1eb694f6f2c4f7eead40c6e7bb7843987c72c071b05558b648d1b245&=&format=webp&quality=lossless&width=928&height=524"
+    },
+    {
+        "discord": "760651690965336105",
+        "reason": "RedEngine",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-07-14",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1394224646051598367/image.png?ex=6939cf23&is=69387da3&hm=46cae361f6920dcaa125da178e55814edb42254914b64c01033b1c538677be8a&=&format=webp&quality=lossless&width=1032&height=867",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "1377185266791350323",
+        "reason": "Macho",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-07-15",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1394462479332933632/image.png?ex=69395b22&is=693809a2&hm=887060665cc95cb545afa2a5c2f54d7f97e9910943e6a8732c0cc0fb8a962cb9&=&format=webp&quality=lossless&width=1032&height=612",
+        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1394462425935515769/image.png?ex=69395b16&is=69380996&hm=ba7f124629e5f66139cebae4f4341d858d66d63e6d6a0c4ff8ba4e366c3addb2&=&format=webp&quality=lossless&width=1032&height=677",
+        "e3": ""
+    },
+    {
+        "discord": "208727416892424192",
+        "reason": "Eulen & Macho",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-07-15",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1394793606266486784/image.png?ex=69393e05&is=6937ec85&hm=bf6ec15de6c103887553d956db17b9137904022d77a0a72de0cffdc449ba5a20&=&format=webp&quality=lossless",
+        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1394794140419489842/image.png?ex=69393e85&is=6937ed05&hm=f180b2316af929812e7766297b3623b67bd684eb0306cf964e9fb550431570c6&=&format=webp&quality=lossless&width=1032&height=592",
+        "e3": ""
+    },
+    {
+        "discord": "1377185266791350323",
+        "reason": "Macho",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-07-16",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1395036721745363055/image.png?ex=693977b0&is=69382630&hm=021b6c0b693daf431a2964264058e936c19eb209ce2fcff9e3273f292ca472cc&=&format=webp&quality=lossless&width=1032&height=609",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "1313238507283677314",
+        "reason": "Macho",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-07-16",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1395149752278057000/image.png?ex=69393835&is=6937e6b5&hm=28bdfe275a2c11da8bad7cdfc4cdb4d482b8f63305e61b816d476ab5f4b4e8da&=&format=webp&quality=lossless&width=928&height=517",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "1254357963070640160",
+        "reason": "Generics & RPF's",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-07-18",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1395819832254922864/image.png?ex=6939ae05&is=69385c85&hm=ba003e2d535792982db1f30e441fc7d563ba36167ca97bf3511fc7f55c2dd251&=&format=webp&quality=lossless",
+        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1395819832691261522/image.png?ex=6939ae05&is=69385c85&hm=d1235c3379f9c9fff41ce976fa012a9be9b42af5503d50f552cc3dfce1ad8bd3&=&format=webp&quality=lossless",
+        "e3": ""
+    },
+    {
+        "discord": "1375596091436826747",
+        "reason": "TZ",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-07-19",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1395945840647864444/image.png?ex=69397a9f&is=6938291f&hm=63d7e6c1b10863b7373a60cc0250d6575cf285a2d002750f38274e454d0563ff&=&format=webp&quality=lossless&width=928&height=520",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "1359629040905883679",
+        "reason": "Quantity",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-07-20",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1396384833076461718/image.png?ex=6939c1f7&is=69387077&hm=f294509a9746eb03743b372f556594d5dd8c8103c02fe8053958cbd4ae0b1b98&=&format=webp&quality=lossless",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "1286802889565671520",
+        "reason": "XINE - Generics",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-07-20",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1396601809661067284/image.png?ex=69393a8b&is=6937e90b&hm=858732a0b795a62261a21477f104a72ef334229b5a78ed9ada6221040c6f5aa4&=&format=webp&quality=lossless&width=1032&height=557",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "752458663293222942",
+        "reason": "Generics & SYSMAIN Off",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-07-27",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1398806425198919810/Screenshot_2025-07-26_191621.png?ex=693956c0&is=69380540&hm=db4d8267216176e5dd0a9003798d28dabc3d6d49a00311508a482cd163f26f62&=&format=webp&quality=lossless",
+        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1398806425785860136/Screenshot_2025-07-26_191302.png?ex=693956c0&is=69380540&hm=00af0e8a0dc190b86a64f2602c26e40769faf1fff85fa5498b6f748dcbd51292&=&format=webp&quality=lossless",
+        "e3": ""
+    },
+    {
+        "discord": "1303434634922692761",
+        "reason": "TZ",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-08-07",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1402863899505590353/anydesk00075.png?ex=69399911&is=69384791&hm=4750ba37f420304cdca41f9a03d567612113cf823e98089b00350533f9436895&=&format=webp&quality=lossless&width=928&height=522",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "1379930684852015246",
+        "reason": "XINE - Generics",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-09-11",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1415823091078004796/anydesk00179.png?ex=69394841&is=6937f6c1&hm=f0385f96e30b1a63e66f4c35675b8211d15146df5c7003907c6a7452f825b243&=&format=webp&quality=lossless&width=928&height=522",
+        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1415823091568873582/anydesk00177.png?ex=69394841&is=6937f6c1&hm=496454d31fdc4560a49b27bed516284b00c1b1805e4d6d2975de3605a618e2f3&=&format=webp&quality=lossless&width=928&height=522",
+        "e3": "https://media.discordapp.net/attachments/1328025887333159014/1415823090533007512/anydesk00180.png?ex=69394841&is=6937f6c1&hm=1698576134987585d17800cefdf160ff474fde4f3ccd30c5827859655b0506dc&=&format=webp&quality=lossless&width=928&height=522"
+    },
+    {
+        "discord": "1407996482136703061",
+        "reason": "Fresh Bypass",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-09-19",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1418418061077385431/image.png?ex=69397e82&is=69382d02&hm=84bbbd6909018acacc5b03bb18b68f55fcf685e73c0ab65921dc900a86f1c6cc&=&format=webp&quality=lossless&width=928&height=500",
+        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1418418061605732422/image.png?ex=69397e82&is=69382d02&hm=57c0f22cec34ba5d45d75756bac3d6abece757f596334499df390d7376c2e03b&=&format=webp&quality=lossless&width=928&height=490",
+        "e3": "https://media.discordapp.net/attachments/1328025887333159014/1418418062239076402/image.png?ex=69397e82&is=69382d02&hm=02b3039839bee16f4208810f0f84b8be3724cf22f6e3d93170d412209280017f&=&format=webp&quality=lossless"
+    },
+    {
+        "discord": "1046098577690218496",
+        "reason": "One Shot, Hitbox & Spoofer",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-09-27",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1421378589382803487/Screenshot_2025-09-27_010916.png?ex=6939b7b7&is=69386637&hm=c937d9feb810fc5887f3fe3211a9a990617aa75950281245eb90708b8759918b&=&format=webp&quality=lossless&width=928&height=738",
+        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1421378589688860733/Screenshot_2025-09-27_010808.png?ex=6939b7b7&is=69386637&hm=c013ad779f80afbf131657dc124c96c4ea6ef0812f5756e9bd57aef6fd08056b&=&format=webp&quality=lossless",
+        "e3": "https://media.discordapp.net/attachments/1328025887333159014/1421378590053761049/Screenshot_2025-09-27_010616.png?ex=6939b7b7&is=69386637&hm=e6d07cd6eb8304d5ab4585aa248e3c5194ff9dc87179c94b882a2dfaa56ef586&=&format=webp&quality=lossless"
+    },
+    {
+        "discord": "1400137329468768276",
+        "reason": "XINE - Generics",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-09-28",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1421729571702837370/image.png?ex=6939ad18&is=69385b98&hm=0edc80a7dc9a31c008830ddb4f2386db44d5aa12a4c383333da83eb5de9b780d&=&format=webp&quality=lossless",
+        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1421729571375546408/image.png?ex=6939ad18&is=69385b98&hm=b393bed4df3aed86a024a5e1e46c42ee8719ac3c66bc305e525b1535efe88941&=&format=webp&quality=lossless&width=928&height=413",
+        "e3": "https://media.discordapp.net/attachments/1328025887333159014/1421729191405158442/image.png?ex=6939acbd&is=69385b3d&hm=f586fd5c5d2847262d20529bc32610d96536b9ffa59dd97ff1927d3dc7011707&=&format=webp&quality=lossless"
+    },
+    {
+        "discord": "1366135415236460564",
+        "reason": "RPF's",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-09-28",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1421958697323597885/Screenshot_2025-09-28_151850.png?ex=6939d9bc&is=6938883c&hm=1d98560fce88a9a2187514743e640605b6fc3b050367508508f0e2bb6fb85223&=&format=webp&quality=lossless",
+        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1421958702671466616/Screenshot_2025-09-28_151942.png?ex=6939d9bd&is=6938883d&hm=c908a2da5479af6506a0fb19ed85c723d274c5522007d1958076499303dc6bba&=&format=webp&quality=lossless",
+        "e3": "https://media.discordapp.net/attachments/1328025887333159014/1421958703971569857/Screenshot_2025-09-28_152102.png?ex=6939d9bd&is=6938883d&hm=16e627f2f1211328992c59ed79802251b1ccf2f3df9993728e2961893b3c5b09&=&format=webp&quality=lossless"
+    },
+    {
+        "discord": "1329960472232857710",
+        "reason": "SKRIPT.GG",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-10-02",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1423118009010094204/image.png?ex=6939742d&is=693822ad&hm=026fe68713cff7c149d202f7cc5b748baddfe7ac73a75377e981cd711fc46c84&=&format=webp&quality=lossless&width=928&height=522",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "1358641630260891658",
+        "reason": "RPF's",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-10-4",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1424147700747604199/Screenshot_2025-10-04_173325.png?ex=69393ea7&is=6937ed27&hm=cc8e683c275c311b95c285a48c0d75f869d6bbcbdea0de2602f0768ec1a4d4d8&=&format=webp&quality=lossless&width=928&height=387",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "863903834261946368",
+        "reason": "XINE - Generics",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-10-05",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1424241536966856734/Screenshot_2025-10-04_223127.png?ex=6939960b&is=6938448b&hm=0146d98ebcd9fc16323a1165d5384dd4752eb104eab3c4ec0458928e38849588&=&format=webp&quality=lossless&width=928&height=510",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "1406072782281768980",
+        "reason": "420Service",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-08-07",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1426391468695748629/Screenshot_2025-10-10_183102.png?ex=69397f53&is=69382dd3&hm=7cc46acda8339bd4687edc5344e09c5255b763f9910aeb5a46b699db48baad34&=&format=webp&quality=lossless&width=928&height=516",
+        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1426391469387681812/Screenshot_2025-10-10_183450.png?ex=69397f53&is=69382dd3&hm=992986a64e03b9bc50190d6db32ad8d349a0fc7e1adf1f12d47722b3b300def5&=&format=webp&quality=lossless&width=928&height=522",
+        "e3": "https://media.discordapp.net/attachments/1328025887333159014/1426391469811564634/Screenshot_2025-10-10_183636.png?ex=69397f53&is=69382dd3&hm=cbe9d5426dc841d34659987e56af21c7e5d2013f37328f2c06a8c2275aa54ecb&=&format=webp&quality=lossless&width=928&height=517"
+    },
+    {
+        "discord": "1128568711784181830",
+        "reason": "N/A - FOV Visible in Evidence",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-10-17",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1428547961775722586/image.png?ex=69396eb7&is=69381d37&hm=27a900dafa3bb89922b741653c9340b6e81392a617e82f299a33afa96d035eed&=&format=webp&quality=lossless&width=1032&height=489",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "1427746357803749514",
+        "reason": "Macho",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-10-18",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1429232925320286268/Screenshot_2025-10-18_165944.png?ex=693949a3&is=6937f823&hm=242c5ddeffe30704f2c4a19371ef8ad64ee6ab27ff8b45fa244f4fbc0f5eb4f0&=&format=webp&quality=lossless&width=928&height=512",
+        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1429232929279578223/Screenshot_2025-10-18_171506.png?ex=693949a4&is=6937f824&hm=90e0dd52aee821676c95adafb0050ae654f8ee4a727944354ecd1417ee376a00&=&format=webp&quality=lossless&width=928&height=454",
+        "e3": ""
+    },
+    {
+        "discord": "814711924083654677",
+        "reason": "Softaim",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-10-20",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1429695874136543327/Screenshot_2025-10-19_215054.png?ex=6939a74a&is=693855ca&hm=2fa574583c4ff0d11a22eb5bb385bed08cef3b557b7b6f9da1c43e91bf5d9358&=&format=webp&quality=lossless&width=928&height=493",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "1072594712034291802",
+        "reason": "RedEngine & Eulen",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-10-20",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1429790308668801095/Screenshot_2025-10-20_035920.png?ex=6939567d&is=693804fd&hm=c29eb92f990cb26e854c5fc460716d9499a0a4bdb0ee45781121c6f63ea24376&=&format=webp&quality=lossless&width=928&height=470",
+        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1429790309193351218/Screenshot_2025-10-20_035727.png?ex=6939567d&is=693804fd&hm=4ff20797e2064de3d5a6b95bc3bcee62167533e06c7ecf563051d28adb0243da&=&format=webp&quality=lossless&width=928&height=482",
+        "e3": ""
+    },
+    {
+        "discord": "1283084244381339709",
+        "reason": "Config",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-11-08",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1436588985710411837/image.png?ex=6939ae80&is=69385d00&hm=0d8bb9e452e05f1fafcaa1d91367f9c3b84c751e084ad1b1efd3dfe1209a962a&=&format=webp&quality=lossless&width=1032&height=556",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "1133019702315196446",
+        "reason": "Spoofer",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-11-08",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1436806676706627644/image.png?ex=6939d07e&is=69387efe&hm=9ef952ad88621115f9e633a59f8353ba0abafa1978099a9786179678999ffe79&=&format=webp&quality=lossless&width=1032&height=542",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "692635286743547905",
+        "reason": "TZ & RPF's",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-11-09",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1437081173305069690/image.png?ex=69397ea3&is=69382d23&hm=4875ffcff8cddd2c90177389fa4b0eb7e36ac623394052098a900fd6653a2947&=&format=webp&quality=lossless&width=1032&height=487",
+        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1437122649393467574/image.png?ex=6939a544&is=693853c4&hm=163d6eeb6aecb348b4ca6c30c01289c6a7d6f56b99a51479e7675f55894fcd8c&=&format=webp&quality=lossless",
+        "e3": ""
+    },
+    {
+        "discord": "889273566728712202",
+        "reason": "0x32 - Generics",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-11-09",
+        "e1": "",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "1065531019668758612",
+        "reason": "420Service",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-11-10",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1437549113041359029/Screenshot_2025-11-10_145133.png?ex=69393830&is=6937e6b0&hm=3f796e025224ba4d88d7d65e1a44dd535a5ad15a7ddc4bd343c12a77830555f2&=&format=webp&quality=lossless&width=928&height=518",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "1428224691989905530",
+        "reason": "XINE - Generics",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-11-12",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1437969043653918800/image.png?ex=69396dc8&is=69381c48&hm=6a01d30a48d823bd5306a3fcd0f919b860da42437877419e532191f6f531924d&=&format=webp&quality=lossless&width=928&height=516",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "676986769614438410",
+        "reason": "FLK Bypass & Eulen",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-11-12",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1438120664803446967/Screenshot_2025-11-12_105246.png?ex=6939523d&is=693800bd&hm=b5a93534e554f2c059e13208206f8b4da8a71e257aeff028bc2acc64333aa13e&=&format=webp&quality=lossless",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "1383695311725133854",
+        "reason": "420Service",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-11-19",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1440578367702306857/image.png?ex=6939b167&is=69385fe7&hm=585ea7fe4578c1872acbacdca4a225c90c2446dcc448351dc4de949997538878&=&format=webp&quality=lossless",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "1381883553733939220",
+        "reason": "XINE - Generics",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-11-25",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1442733792283332669/Screenshot_2025-11-24_222155.png?ex=69399fcc&is=69384e4c&hm=e6689daa0d92c179f2970bea45dbef998b9fcd962fde89777a15b7ad80e2f71a&=&format=webp&quality=lossless&width=928&height=505",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "280213120272826368",
+        "reason": "Modified x64a.rpf",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-11-29",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1444240012735545394/image.png?ex=6939d493&is=69388313&hm=f7876d61e15b3291bdc20d8573985d3b96cf56c03e600f8a95eb7c569b357c04&=&format=webp&quality=lossless",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "775904022237282327",
+        "reason": "Config",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-12-01",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1444889010299473940/Screenshot_2025-11-30_204344.png?ex=69398e00&is=69383c80&hm=34f384fc731de478de07924217c5569396a012c1cc3caf7d79123fc6616e9d2e&=&format=webp&quality=lossless&width=928&height=503",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "1331345257039659010",
+        "reason": "RedEngine & Phaze",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-12-02",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1445471717295263916/Screenshot_2025-12-02_173233.png?ex=6939b270&is=693860f0&hm=29838d93c93e650f8e033bd5a04cae164c8c29250d986673b1d7f700dd3245b2&=&format=webp&quality=lossless&width=928&height=520",
+        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1445471719933480992/Screenshot_2025-12-02_173405.png?ex=6939b271&is=693860f1&hm=4c5f71aee1981e5891ecca11b0897491964571089701c7b767029b65f04aca6b&=&format=webp&quality=lossless&width=928&height=520",
+        "e3": ""
+    },
+    {
+        "discord": "1415875030687940631",
+        "reason": "No Props, x64a.rpf (modifications), clear ramps & fast run",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-12-03",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1445589534355099718/Screenshot_2025-12-02_175012.png?ex=6939776a&is=693825ea&hm=c750d1fca8dba1354b46d26b9f0f0395d850059a92658e3a90058c872d609684&=&format=webp&quality=lossless&width=928&height=514",
+        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1445589533868556409/Screenshot_2025-12-02_175026.png?ex=6939776a&is=693825ea&hm=23259f5522157d50c99f30793f91f190d4ea9f03d3b252e6bafe508baa52a212&=&format=webp&quality=lossless&width=928&height=519",
+        "e3": "https://media.discordapp.net/attachments/1328025887333159014/1445589533482553475/Screenshot_2025-12-02_175044.png?ex=6939776a&is=693825ea&hm=941799a2ad7edbfbc35b3b9c1f4bce46de7b8cf0a08a40fcc91fd8499864689e&=&format=webp&quality=lossless&width=928&height=512"
+    },
+    {
+        "discord": "1327030586874921081",
+        "reason": "XINE - Generics & God Mode",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-12-04",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1446193718590967839/Screenshot_2025-12-04_172932.png?ex=6939afdb&is=69385e5b&hm=b8e49b9a1a2ee1b67315e8a80383dda5ce68d6bb64e619e0d261ccc9c856e2b1&=&format=webp&quality=lossless&width=928&height=518",
+        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1446193719039754380/Screenshot_2025-12-04_172832.png?ex=6939afdb&is=69385e5b&hm=67a01bf525fd5ef146bb555a309653bf14257ccbc7825c514f0e208a54990e06&=&format=webp&quality=lossless&width=928&height=519",
+        "e3": "https://media.discordapp.net/attachments/1328025887333159014/1446193718188052570/Screenshot_2025-12-04_173135.png?ex=6939afdb&is=69385e5b&hm=30cec422f3dcd001ccd4b229f07a4085099b3e21fb64e4122f973642a6600def&=&format=webp&quality=lossless&width=928&height=52"
+    },
+    {
+        "discord": "1296363083224055822",
+        "reason": "Config",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-12-04",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1446239471199846582/Screenshot_2025-12-04_202335.png?ex=6939da77&is=693888f7&hm=671eb51a0ddee0a1707f8ac99fda343d06f7146ff931c23ae58f2535aae8cd99&=&format=webp&quality=lossless&width=928&height=520",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "1420541939232542792",
+        "reason": "Susano + DControl",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-12-04",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1446255007530746059/Screenshot_2025-12-04_213922.png?ex=6939e8ef&is=6938976f&hm=6d39f567627e1a4cfe2248cb5146e2cb0e82fd8c6e5745146248eb64188618ac&=&format=webp&quality=lossless&width=928&height=520",
+        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1446255009871302747/Screenshot_2025-12-04_212813.png?ex=6939e8f0&is=69389770&hm=816a5a785845980de6c2779e66f4999ef2651f30c14adaa52f8d7241a6699654&=&format=webp&quality=lossless&width=928&height=519",
+        "e3": "https://media.discordapp.net/attachments/1328025887333159014/1446255008940298262/Screenshot_2025-12-04_213406.png?ex=6939e8f0&is=69389770&hm=daa542552a252e67bdb79eec57e706bc5efe4b4d4a3653efe7cf7fbb769d906d&=&format=webp&quality=lossless&width=928&height=497"
+    },
+    {
+        "discord": "1412049995640606750",
+        "reason": "Macho + DIAGTRACK Off",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-12-05",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1446310199068459018/Screenshot_2025-12-05_011708.png?ex=69397396&is=69382216&hm=05491a0a6aaf260bfcab2521ce57edf367cbdbfd2036e231be77e3eb89f2c881&=&format=webp&quality=lossless&width=1032&height=579",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "471530758000082974",
+        "reason": "Eulen",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-12-05",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1446397515405594624/image.png?ex=6939c4e8&is=69387368&hm=c55695c5d46accffca8d9d1591597473aea1b1add9fd8987d7dd2041e590d77e&=&format=webp&quality=lossless",
+        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1446397781626585179/data_usage.png?ex=6939c527&is=693873a7&hm=912e3c081892672ab356623c34c8e10cb4563e1e6d8978fd499f5dd478cfa73d&=&format=webp&quality=lossless",
+        "e3": "https://media.discordapp.net/attachments/1328025887333159014/1446397491208654889/image.png?ex=6939c4e2&is=69387362&hm=d970d3bd36209ed5cadebf85ffa8542d6df894cb506e795a638a718157aba696&=&format=webp&quality=lossless&width=1032&height=581"
+    },
+    {
+        "discord": "1220785837760053431",
+        "reason": "RedEngine",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-12-07",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1447091905652457545/Screenshot_2025-12-06_224002.png?ex=6939a89b&is=6938571b&hm=689f4c15512ed8eca6f62ff7be0f9a269446cdd6460ccbbf3f9750b3d40d8bf3&=&format=webp&quality=lossless&width=928&height=511",
+        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1447091907934158991/Screenshot_2025-12-06_224013.png?ex=6939a89c&is=6938571c&hm=614f4c41c6c8fda86bcdd0ac386ad31bc7852d54ac9e8161ccee0f7882ea7f6b&=&format=webp&quality=lossless&width=928&height=502",
+        "e3": ""
+    },
+    {
+        "discord": "1368315087332315280",
+        "reason": "XINE - Generics",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-12-07",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1447174765407371265/Screenshot_2025-12-07_103353.png?ex=6939f5c7&is=6938a447&hm=a26c9531c1ea30f32718954207a23ba701e80269c8b658dd2e69cb7d676b017a&=&format=webp&quality=lossless&width=928&height=519",
+        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1447174764920569856/Screenshot_2025-12-07_103004.png?ex=6939f5c7&is=6938a447&hm=ba51062b2a69a14ff6e5387afa8c960dee78800aae62e33ced33f776952aa27b&=&format=webp&quality=lossless&width=928&height=522",
+        "e3": ""
+    },
+    {
+        "discord": "1329165958220349542",
+        "reason": "Config",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-12-07",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1447354325151121559/image.png?ex=6939f441&is=6938a2c1&hm=bf8ee2a3de8a7a1699bb60ad339cbbe3d71a97a8ab9c653aa051cf21fca96258&=&format=webp&quality=lossless&width=928&height=492",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "1273454586866176046",
+        "reason": "SKRIPT.GG",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-12-08",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1447554528819023914/Screenshot_2025-12-08_054020.png?ex=693a05f5&is=6938b475&hm=6c18df1c926708c3b4bbfb241a2c6669b8eb8e0f5249d658e2c9686e59217e70&=&format=webp&quality=lossless&width=1032&height=580",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "1381210034255564850",
+        "reason": "Susano",
+        "server": "Rage RP",
+        "slink": "https://discord.gg/PQvrWV8Hab",
+        "date": "2025-12-08",
+        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1447620156007387146/image.png?ex=69399a54&is=693848d4&hm=a8d97cec285ad97f72aec5a5c4a22659f765bb17b468831869fe635979730f02&=&format=webp&quality=lossless&width=928&height=537",
+        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1447620156988723220/image.png?ex=69399a54&is=693848d4&hm=0f87c13dc7ff93369d221ec874535168ad44ed258b263c65fb7fb1775d653a08&=&format=webp&quality=lossless&width=928&height=139",
+        "e3": "https://media.discordapp.net/attachments/1328025887333159014/1447621555742834779/IMG_0814.png?ex=69399ba2&is=69384a22&hm=4874d97d7d83db2c7726e2d46a8f142ed7dee4574cc4952a201c25f014493c2c&=&format=webp&quality=lossless"
+    },
+    {
+        "discord": "1380127906394542141",
+        "reason": "Eulen",
+        "server": "Southland RP",
+        "slink": "https://discord.gg/7qRpdPz4u8",
+        "date": "2025-11-17",
+        "e1": "https://media.discordapp.net/attachments/1352770461100146748/1440066496704548955/Screenshot_2025-11-17_194839.png?ex=6939ceef&is=69387d6f&hm=f4f42bb8ffcf63974a392e3fad0d290e69368826cbe270fe1a99684b619e8b40&=&format=webp&quality=lossless&width=1032&height=580",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "1235632457500463144",
+        "reason": "XINE - Generics & DControl",
+        "server": "Southland RP",
+        "slink": "https://discord.gg/7qRpdPz4u8",
+        "date": "2025-11-19",
+        "e1": "https://media.discordapp.net/attachments/1352770461100146748/1440796329939959859/Screenshot_2025-11-19_200225.png?ex=6939d3a5&is=69388225&hm=293d62d1836e08b735fb6e10e803f0ec7c1046c8d325672a61de9e8efe0829e7&=&format=webp&quality=lossless&width=928&height=513",
+        "e2": "",
+        "e3": ""
+    },
+    {
+        "discord": "1433932377003917362",
+        "reason": "XINE - Generics",
+        "server": "Southland RP",
+        "slink": "https://discord.gg/7qRpdPz4u8",
+        "date": "2025-11-09",
+        "e1": "https://media.discordapp.net/attachments/1352770461100146748/1440810711000285357/Screenshot_2025-11-19_210120.png?ex=6939e10a&is=69388f8a&hm=f0f98f7ed3a56f36f79986b85e0a7f43bb820e2de136d2c1584dfe73866508b6&=&format=webp&quality=lossless&width=1032&height=579",
+        "e2": "",
+        "e3": ""
+    }
+]
+
 
 
 
