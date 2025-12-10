@@ -95,62 +95,98 @@
         width: 400px;
     }
 
+    /* ---------------- PIN OVERLAY ---------------- */
+    #pinOverlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.95);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10000;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+
+    #pinInput {
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+        width: 150px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #2a2138;
+        color: white;
+    }
+
+    #submitBtn {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    #errorMsg {
+        color: red;
+        margin-top: 10px;
+        display: none;
+    }
 </style>
 </head>
 <body>
-<div id="pinScreen" style="
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background-color: #0d0b12;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 99999;
-">
-    <h2 style="font-size: 28px;">Enter Access Code</h2>
 
-    <input type="password" id="pinInput" placeholder="Enter PIN..." style="
-        padding: 12px;
-        font-size: 20px;
-        width: 220px;
-        text-align: center;
-        background-color: #1a1424;
-        color: white;
-        border: none;
-        border-radius: 6px;
-        margin-top: 15px;
-    ">
-
-    <button onclick="checkPIN()" style="
-        margin-top: 20px;
-        padding: 10px 20px;
-        background-color: #5a2ea6;
-        border: none;
-        border-radius: 6px;
-        color: white;
-        cursor: pointer;
-        font-size: 16px;
-    ">Submit</button>
-
-    <p id="pinError" style="color: red; margin-top: 12px; font-size: 16px;"></p>
+<!-- PIN OVERLAY -->
+<div id="pinOverlay">
+  <h2>Enter PIN to Access</h2>
+  <input type="password" id="pinInput" placeholder="Enter PIN" maxlength="6">
+  <button id="submitBtn">Submit</button>
+  <div id="errorMsg">Incorrect PIN. Try again.</div>
 </div>
 
+<header>
+    <input type="text" id="searchBar" placeholder="Search Discord ID..." onkeyup="searchCheaters()">
+    <button onclick="toggleFilter()">Filter</button>
 </header>
 
 <div id="filterDropdown"></div>
 <div id="resultsInfo"></div>
-
 <div id="cheaterList"></div>
 
 <!-- VIEW MORE INFO -->
 <div id="modal"></div>
 
 <script>
+/* ---------------- PIN SYSTEM ---------------- */
+const correctPIN = "1234"; // Change PIN here
+const pinOverlay = document.getElementById("pinOverlay");
+const pinInput = document.getElementById("pinInput");
+const submitBtn = document.getElementById("submitBtn");
+const errorMsg = document.getElementById("errorMsg");
+
+function checkPIN() {
+    if (pinInput.value === correctPIN) {
+        pinOverlay.style.display = "none";
+    } else {
+        errorMsg.style.display = "block";
+        pinInput.value = "";
+        pinInput.focus();
+    }
+}
+
+submitBtn.addEventListener("click", checkPIN);
+pinInput.addEventListener("keyup", function(event) {
+    if (event.key === "Enter") checkPIN();
+});
+pinInput.focus();
+
+/* ---------------- DATA & FUNCTIONS ---------------- */
 let cheaters = [];
 
-/* -------------------- LOAD JSON DATABASE -------------------- */
 fetch("cheaters.json")
     .then(res => res.json())
     .then(data => {
@@ -162,11 +198,9 @@ fetch("cheaters.json")
         console.error("Failed to load cheaters.json", err);
     });
 
-/* -------------------- RENDER CHEATERS -------------------- */
 function renderCheaters(list = cheaters) {
     let container = document.getElementById("cheaterList");
     container.innerHTML = "";
-
     list.forEach((c, i) => {
         container.innerHTML += `
             <div class="cheater-card">
@@ -178,7 +212,6 @@ function renderCheaters(list = cheaters) {
     });
 }
 
-/* -------------------- SEARCH -------------------- */
 function searchCheaters() {
     let input = document.getElementById("searchBar").value.trim();
     let resultsBox = document.getElementById("resultsInfo");
@@ -206,7 +239,6 @@ function searchCheaters() {
     renderCheaters(results);
 }
 
-/* -------------------- FILTER -------------------- */
 function toggleFilter() {
     let menu = document.getElementById("filterDropdown");
     menu.style.display = menu.style.display === "block" ? "none" : "block";
@@ -214,14 +246,9 @@ function toggleFilter() {
 
 function loadFilterOptions() {
     let menu = document.getElementById("filterDropdown");
-
     let servers = {};
-    cheaters.forEach(c => {
-        servers[c.server] = (servers[c.server] || 0) + 1;
-    });
-
+    cheaters.forEach(c => { servers[c.server] = (servers[c.server] || 0) + 1; });
     menu.innerHTML = "<h3>Select Server</h3>";
-
     for (let srv in servers) {
         menu.innerHTML += `<p onclick="applyFilter('${srv}')">${srv} (${servers[srv]})</p>`;
     }
@@ -235,15 +262,13 @@ function applyFilter(serverName) {
     document.getElementById("filterDropdown").style.display = "none";
 }
 
-/* -------------------- VIEW MORE INFO -------------------- */
 function viewMore(i) {
     let c = cheaters[i];
     let modal = document.getElementById("modal");
 
-    // Format date
-    let dateObj = new Date(c.date); // converts "2025-02-03" into a Date object
+    let dateObj = new Date(c.date);
     let options = { day: '2-digit', month: 'short', year: 'numeric' };
-    let formattedDate = dateObj.toLocaleDateString('en-US', options); // "03 Feb 2025"
+    let formattedDate = dateObj.toLocaleDateString('en-US', options);
 
     let ev = "";
     if (c.e1) ev += `<button onclick="window.open('${c.e1}')">Evidence 1</button><br><br>`;
@@ -263,21 +288,6 @@ function viewMore(i) {
     modal.style.display = "block";
 }
 </script>
-// ---------------- PIN LOCK ----------------
-const ACCESS_PIN = "Boomerangpreview25";  // your PIN
-
-function checkPIN() {
-    const input = document.getElementById("pinInput").value.trim();
-
-    if (input === ACCESS_PIN) {
-        document.getElementById("pinScreen").style.display = "none";
-    } else {
-        document.getElementById("pinError").innerText = "Incorrect PIN. Try again.";
-    }
-}
 
 </body>
 </html>
-
-
-
