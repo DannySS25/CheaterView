@@ -5,203 +5,215 @@
 <title>FiveM Cheater Logger</title>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-    /* ---------- BASE ---------- */
-    * {
-        box-sizing: border-box;
-    }
+/* ---------- BASE ---------- */
+* {
+    box-sizing: border-box;
+}
 
-    body {
-        background-color: #0d0b12;
-        color: white;
-        font-family: 'Roboto', Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #0d0b12, #1b0f2a);
+    color: #fff;
+}
 
-    a {
-        color: #5a2ea6;
-        text-decoration: none;
-    }
+a {
+    color: #5a2ea6;
+    text-decoration: none;
+}
 
-    a:hover {
-        text-decoration: underline;
-    }
+a:hover {
+    text-decoration: underline;
+}
 
-    /* ---------- HEADER ---------- */
+/* ---------- HEADER ---------- */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgba(26, 20, 36, 0.9);
+    border-bottom: 2px solid #5a2ea6;
+    backdrop-filter: blur(5px);
+    gap: 10px;
+}
+
+#searchBar {
+    width: 300px;
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #2a2138;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#searchBar:focus {
+    outline: none;
+    box-shadow: 0 0 12px #5a2ea6;
+    background-color: #2f234d;
+}
+
+button {
+    background-color: #5a2ea6;
+    border: none;
+    padding: 10px 16px;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s;
+    box-shadow: 0 0 6px #5a2ea6;
+}
+
+button:hover {
+    background-color: #7441d1;
+    box-shadow: 0 0 14px #7441d1, 0 0 20px #5a2ea6;
+}
+
+/* ---------- RESULTS INFO ---------- */
+#resultsInfo {
+    margin: 15px 20px;
+    font-size: 18px;
+    color: #caaaff;
+}
+
+/* ---------- CHEATER LIST ---------- */
+#cheaterList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 20px 40px 20px;
+}
+
+.cheater-card {
+    background: linear-gradient(145deg, #1a1424, #241c3b);
+    border-left: 4px solid #5a2ea6;
+    padding: 15px;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 4px #5a2ea6;
+}
+
+.cheater-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px #5a2ea6, 0 8px 20px rgba(90, 46, 166, 0.5);
+}
+
+.cheater-card button {
+    margin-top: 10px;
+    width: 100%;
+    box-shadow: 0 0 6px #5a2ea6;
+}
+
+.cheater-card button:hover {
+    box-shadow: 0 0 14px #7441d1, 0 0 20px #5a2ea6;
+}
+
+/* ---------- FILTER DROPDOWN ---------- */
+#filterDropdown {
+    display: none;
+    position: absolute;
+    right: 160px;
+    top: 70px;
+    background-color: rgba(26, 20, 36, 0.95);
+    border: 2px solid #5a2ea6;
+    border-radius: 8px;
+    padding: 15px;
+    z-index: 999;
+    width: 220px;
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: all 0.4s ease;
+    backdrop-filter: blur(5px);
+}
+
+#filterDropdown.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#filterDropdown h3 {
+    margin-top: 0;
+    font-size: 16px;
+    color: #caaaff;
+}
+
+#filterDropdown p {
+    margin: 8px 0;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+
+#filterDropdown p:hover {
+    background-color: #5a2ea6;
+}
+
+/* ---------- MODAL ---------- */
+#modalOverlay {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(3px);
+    z-index: 998;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1a1424;
+    padding: 25px;
+    border: 3px solid #5a2ea6;
+    border-radius: 12px;
+    z-index: 999;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 0 20px #5a2ea6;
+}
+
+#modal h2 {
+    margin-top: 0;
+    color: #caaaff;
+}
+
+#modal button {
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* ---------- SEARCH HIGHLIGHT ---------- */
+mark {
+    background-color: #5a2ea6;
+    color: white;
+    padding: 0 2px;
+    border-radius: 2px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width: 600px){
     header {
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 20px;
-        background-color: #1a1424;
-        border-bottom: 2px solid #5a2ea6;
-        gap: 10px;
+        flex-direction: column;
+        align-items: stretch;
     }
-
-    #searchBar {
-        width: 300px;
-        max-width: 100%;
-        padding: 10px;
-        border-radius: 8px;
-        border: none;
-        background-color: #2a2138;
-        color: white;
-        transition: all 0.3s;
-    }
-
-    #searchBar:focus {
-        outline: none;
-        box-shadow: 0 0 8px #5a2ea6;
-        background-color: #2f234d;
-    }
-
-    button {
-        background-color: #5a2ea6;
-        border: none;
-        padding: 10px 16px;
-        color: white;
-        cursor: pointer;
-        border-radius: 8px;
-        transition: all 0.2s;
-    }
-
-    button:hover {
-        background-color: #7441d1;
-    }
-
-    /* ---------- RESULTS INFO ---------- */
-    #resultsInfo {
-        margin: 15px 20px;
-        font-size: 18px;
-        color: #caaaff;
-    }
-
-    /* ---------- CHEATER LIST ---------- */
-    #cheaterList {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        gap: 15px;
-        padding: 0 20px 20px 20px;
-    }
-
-    .cheater-card {
-        background: linear-gradient(145deg, #1a1424, #241c3b);
-        border-left: 4px solid #5a2ea6;
-        padding: 15px;
-        border-radius: 8px;
-        transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .cheater-card:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 4px 15px rgba(90, 46, 166, 0.5);
-    }
-
-    .cheater-card button {
-        margin-top: 10px;
-        width: 100%;
-    }
-
-    /* ---------- FILTER DROPDOWN ---------- */
     #filterDropdown {
-        display: none;
-        position: absolute;
-        right: 160px;
-        top: 70px;
-        background-color: #1a1424;
-        border: 2px solid #5a2ea6;
-        border-radius: 8px;
-        padding: 15px;
-        z-index: 999;
-        width: 220px;
-        opacity: 0;
-        transform: translateY(-10px);
-        transition: all 0.3s ease;
+        right: 20px;
+        top: 120px;
     }
-
-    #filterDropdown.show {
-        display: block;
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    #filterDropdown h3 {
-        margin-top: 0;
-        font-size: 16px;
-        color: #caaaff;
-    }
-
-    #filterDropdown p {
-        margin: 8px 0;
-        cursor: pointer;
-        padding: 5px;
-        border-radius: 5px;
-        transition: all 0.2s;
-    }
-
-    #filterDropdown p:hover {
-        background-color: #5a2ea6;
-    }
-
-    /* ---------- MODAL ---------- */
-    #modalOverlay {
-        display: none;
-        position: fixed;
-        top:0;
-        left:0;
-        width:100%;
-        height:100%;
-        background: rgba(0,0,0,0.6);
-        z-index: 998;
-    }
-
-    #modal {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #1a1424;
-        padding: 25px;
-        border: 3px solid #5a2ea6;
-        border-radius: 12px;
-        z-index: 999;
-        width: 90%;
-        max-width: 450px;
-    }
-
-    #modal h2 {
-        margin-top: 0;
-        color: #caaaff;
-    }
-
-    #modal button {
-        margin-top: 10px;
-        width: 100%;
-    }
-
-    mark {
-        background-color: #5a2ea6;
-        color: white;
-        padding: 0 2px;
-        border-radius: 2px;
-    }
-
-    /* ---------- RESPONSIVE ---------- */
-    @media(max-width: 600px){
-        header {
-            flex-direction: column;
-            align-items: stretch;
-        }
-        #filterDropdown {
-            right: 20px;
-            top: 120px;
-        }
-    }
+}
 </style>
 </head>
 <body>
@@ -229,9 +241,7 @@ fetch("cheaters.json")
         renderCheaters();
         loadFilterOptions();
     })
-    .catch(err => {
-        console.error("Failed to load cheaters.json", err);
-    });
+    .catch(err => console.error("Failed to load cheaters.json", err));
 
 /* -------------------- HIGHLIGHT FUNCTION -------------------- */
 function highlight(text, term) {
@@ -279,11 +289,9 @@ function searchCheaters() {
         return;
     }
 
-    if (results.length === 0) {
-        resultsBox.innerHTML = `The ID: ${input} is not found in our database.`;
-    } else {
-        resultsBox.innerHTML = `${results.length} results found`;
-    }
+    resultsBox.innerHTML = results.length === 0 
+        ? `The ID: ${input} is not found in our database.` 
+        : `${results.length} results found`;
 
     renderCheaters(results, input);
 }
@@ -297,9 +305,7 @@ function loadFilterOptions() {
     let menu = document.getElementById("filterDropdown");
 
     let servers = {};
-    cheaters.forEach(c => {
-        servers[c.server] = (servers[c.server] || 0) + 1;
-    });
+    cheaters.forEach(c => servers[c.server] = (servers[c.server] || 0) + 1);
 
     menu.innerHTML = "<h3>Select Server</h3>";
 
