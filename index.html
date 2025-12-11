@@ -3,32 +3,60 @@
 <head>
 <meta charset="UTF-8">
 <title>FiveM Cheater Logger</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
+    /* ---------- BASE ---------- */
+    * {
+        box-sizing: border-box;
+    }
+
     body {
         background-color: #0d0b12;
         color: white;
-        font-family: Arial, sans-serif;
+        font-family: 'Roboto', Arial, sans-serif;
         margin: 0;
         padding: 0;
     }
 
+    a {
+        color: #5a2ea6;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* ---------- HEADER ---------- */
     header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        padding: 20px;
+        padding: 15px 20px;
         background-color: #1a1424;
         border-bottom: 2px solid #5a2ea6;
         gap: 10px;
     }
 
     #searchBar {
-        width: 45%;
+        width: 300px;
+        max-width: 100%;
         padding: 10px;
-        border-radius: 5px;
+        border-radius: 8px;
         border: none;
         background-color: #2a2138;
         color: white;
+        transition: all 0.3s;
+    }
+
+    #searchBar:focus {
+        outline: none;
+        box-shadow: 0 0 8px #5a2ea6;
+        background-color: #2f234d;
     }
 
     button {
@@ -37,21 +65,48 @@
         padding: 10px 16px;
         color: white;
         cursor: pointer;
-        border-radius: 5px;
+        border-radius: 8px;
+        transition: all 0.2s;
     }
 
     button:hover {
         background-color: #7441d1;
     }
 
-    .cheater-card {
-        background-color: #1a1424;
-        border-left: 4px solid #5a2ea6;
-        padding: 15px;
-        margin: 10px;
-        border-radius: 5px;
+    /* ---------- RESULTS INFO ---------- */
+    #resultsInfo {
+        margin: 15px 20px;
+        font-size: 18px;
+        color: #caaaff;
     }
 
+    /* ---------- CHEATER LIST ---------- */
+    #cheaterList {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 15px;
+        padding: 0 20px 20px 20px;
+    }
+
+    .cheater-card {
+        background: linear-gradient(145deg, #1a1424, #241c3b);
+        border-left: 4px solid #5a2ea6;
+        padding: 15px;
+        border-radius: 8px;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cheater-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 15px rgba(90, 46, 166, 0.5);
+    }
+
+    .cheater-card button {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    /* ---------- FILTER DROPDOWN ---------- */
     #filterDropdown {
         display: none;
         position: absolute;
@@ -59,26 +114,49 @@
         top: 70px;
         background-color: #1a1424;
         border: 2px solid #5a2ea6;
-        border-radius: 5px;
-        padding: 10px;
+        border-radius: 8px;
+        padding: 15px;
         z-index: 999;
         width: 220px;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+    }
+
+    #filterDropdown.show {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    #filterDropdown h3 {
+        margin-top: 0;
+        font-size: 16px;
+        color: #caaaff;
     }
 
     #filterDropdown p {
         margin: 8px 0;
         cursor: pointer;
         padding: 5px;
+        border-radius: 5px;
+        transition: all 0.2s;
     }
 
     #filterDropdown p:hover {
         background-color: #5a2ea6;
     }
 
-    #resultsInfo {
-        margin-left: 20px;
-        font-size: 18px;
-        color: #caaaff;
+    /* ---------- MODAL ---------- */
+    #modalOverlay {
+        display: none;
+        position: fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background: rgba(0,0,0,0.6);
+        z-index: 998;
     }
 
     #modal {
@@ -88,13 +166,42 @@
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: #1a1424;
-        padding: 20px;
+        padding: 25px;
         border: 3px solid #5a2ea6;
-        border-radius: 10px;
+        border-radius: 12px;
         z-index: 999;
-        width: 400px;
+        width: 90%;
+        max-width: 450px;
     }
 
+    #modal h2 {
+        margin-top: 0;
+        color: #caaaff;
+    }
+
+    #modal button {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    mark {
+        background-color: #5a2ea6;
+        color: white;
+        padding: 0 2px;
+        border-radius: 2px;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media(max-width: 600px){
+        header {
+            flex-direction: column;
+            align-items: stretch;
+        }
+        #filterDropdown {
+            right: 20px;
+            top: 120px;
+        }
+    }
 </style>
 </head>
 <body>
@@ -106,10 +213,9 @@
 
 <div id="filterDropdown"></div>
 <div id="resultsInfo"></div>
-
 <div id="cheaterList"></div>
 
-<!-- VIEW MORE INFO -->
+<div id="modalOverlay"></div>
 <div id="modal"></div>
 
 <script>
@@ -127,15 +233,26 @@ fetch("cheaters.json")
         console.error("Failed to load cheaters.json", err);
     });
 
+/* -------------------- HIGHLIGHT FUNCTION -------------------- */
+function highlight(text, term) {
+    if (!term) return text;
+    return text.replace(new RegExp(term, 'gi'), match => `<mark>${match}</mark>`);
+}
+
 /* -------------------- RENDER CHEATERS -------------------- */
-function renderCheaters(list = cheaters) {
+function renderCheaters(list = cheaters, searchTerm="") {
     let container = document.getElementById("cheaterList");
     container.innerHTML = "";
+
+    if(list.length === 0){
+        container.innerHTML = `<p style="padding:20px;color:#caaaff;">No cheaters found.</p>`;
+        return;
+    }
 
     list.forEach((c, i) => {
         container.innerHTML += `
             <div class="cheater-card">
-                <p><b>Discord ID:</b> ${c.discord}</p>
+                <p><b>Discord ID:</b> ${highlight(c.discord, searchTerm)}</p>
                 <p><b>Reason:</b> ${c.reason}</p>
                 <button onclick="viewMore(${i})">View More Info</button>
             </div>
@@ -168,13 +285,12 @@ function searchCheaters() {
         resultsBox.innerHTML = `${results.length} results found`;
     }
 
-    renderCheaters(results);
+    renderCheaters(results, input);
 }
 
 /* -------------------- FILTER -------------------- */
 function toggleFilter() {
-    let menu = document.getElementById("filterDropdown");
-    menu.style.display = menu.style.display === "block" ? "none" : "block";
+    document.getElementById("filterDropdown").classList.toggle("show");
 }
 
 function loadFilterOptions() {
@@ -197,18 +313,18 @@ function applyFilter(serverName) {
     document.getElementById("resultsInfo").innerHTML =
         `${filtered.length} results found on server: ${serverName}`;
     renderCheaters(filtered);
-    document.getElementById("filterDropdown").style.display = "none";
+    document.getElementById("filterDropdown").classList.remove("show");
 }
 
 /* -------------------- VIEW MORE INFO -------------------- */
 function viewMore(i) {
     let c = cheaters[i];
     let modal = document.getElementById("modal");
+    let overlay = document.getElementById("modalOverlay");
 
-    // Format date
-    let dateObj = new Date(c.date); // converts "2025-02-03" into a Date object
+    let dateObj = new Date(c.date);
     let options = { day: '2-digit', month: 'short', year: 'numeric' };
-    let formattedDate = dateObj.toLocaleDateString('en-US', options); // "03 Feb 2025"
+    let formattedDate = dateObj.toLocaleDateString('en-US', options);
 
     let ev = "";
     if (c.e1) ev += `<button onclick="window.open('${c.e1}')">Evidence 1</button><br><br>`;
@@ -222,12 +338,19 @@ function viewMore(i) {
         <p><b>Server:</b> <a href="#" onclick="window.open('${c.slink}')">${c.server}</a></p>
         <p><b>Reason:</b> ${c.reason}</p>
         ${ev}
-        <button onclick="modal.style.display='none'">Close</button>
+        <button onclick="closeModal()">Close</button>
     `;
 
+    overlay.style.display = "block";
     modal.style.display = "block";
 }
-</script>
 
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+    document.getElementById("modalOverlay").style.display = "none";
+}
+
+document.getElementById("modalOverlay").addEventListener("click", closeModal);
+</script>
 </body>
 </html>
