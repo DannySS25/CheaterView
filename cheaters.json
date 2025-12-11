@@ -125,7 +125,7 @@
         "server": "Rage RP",
         "slink": "https://discord.gg/PQvrWV8Hab",
         "date": "2025-07-16",
-        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1395149752278057000/image.png?ex=69393835&is=6937e6b5&hm=28bdfe275a2c11da8bad7cdfc4cdb4d482b8f63305e61b816d476ab5f4b4e8da&=&format=webp&quality=lossless&width=928&height=517",
+        "e1": "assets/1313238507283677314 (1).png",
         "e2": "",
         "e3": ""
     },
@@ -135,9 +135,9 @@
         "server": "Rage RP",
         "slink": "https://discord.gg/PQvrWV8Hab",
         "date": "2025-07-18",
-        "e1": "https://media.discordapp.net/attachments/1328025887333159014/1395819832254922864/image.png?ex=6939ae05&is=69385c85&hm=ba003e2d535792982db1f30e441fc7d563ba36167ca97bf3511fc7f55c2dd251&=&format=webp&quality=lossless",
-        "e2": "https://media.discordapp.net/attachments/1328025887333159014/1395819832691261522/image.png?ex=6939ae05&is=69385c85&hm=d1235c3379f9c9fff41ce976fa012a9be9b42af5503d50f552cc3dfce1ad8bd3&=&format=webp&quality=lossless",
-        "e3": ""
+        "e1": "assets/1254357963070640160 (1).png"
+        "e2": "assets/1254357963070640160 (2).png"
+        "e3": 
     },
     {
         "discord": "1375596091436826747",
@@ -580,4 +580,5 @@
         "e3": ""
     }
 ]
+
 
